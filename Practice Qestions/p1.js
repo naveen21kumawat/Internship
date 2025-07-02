@@ -34,3 +34,8 @@ console.log(newarray);
 
 const newObject = { ...Person, city: "Jaipur" };
 console.log(newObject);
+
+// Combine use of filter and map
+
+const nums = [1, 2, 3, 4, 5];
+const doubledEvens = nums.filter(n => n % 2 === 0).map(n => n * 2);
