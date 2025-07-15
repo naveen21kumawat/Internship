@@ -48,3 +48,21 @@ fs.readdir('.', (err, files) => {
         console.log("Files in directory:", files);
     }
 });
+
+fs.mkdir('myDirectory', (err) => {
+    if (err) {
+        console.error("Error creating directory:", err);
+    } else {
+        console.log("Directory created successfully");
+    }
+}
+);
+
+fs.rmdir('myDirectory', (err) => {
+    if (err) {
+        console.error("Error removing directory:", err);
+    } else {
+        console.log("Directory removed successfully");
+    }
+}
+);
